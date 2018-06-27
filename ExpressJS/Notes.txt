@@ -1,0 +1,68 @@
+Date 07/06/2018:
+
+What is ExpressJS?
+    Minimilistic, open source framework for nodeJS
+    uses MVC
+    
+controller:
+    are used to direct traffic and load views
+Models:
+    as a databases and datasource
+    
+Views:
+    User Interfaces
+    
+    
+Learning:
+    Installation and setup
+    Middleware
+    Routing 
+    Template Engines - EJS, Handlebar, Jade
+    Form and Input
+    Model, ORM databases - MongoDB
+    Express Generator
+    
+Installation and Setup:
+    creating package.json file
+    dependencies
+
+Middleware:
+    middleware is the function that has access to the request and response object and the
+    next middleware that is going to fire.
+    
+    most of the modules have there own middleware to be setup.
+    for using the middleware:
+        app.use();
+
+Routing:
+    How to Handle incomming HTTP request and route it to template engine
+    / means homepage
+    
+Template Engine:
+    View Engine
+    ejs: embedded java script
+    
+Model, ORM databases - MongoDB:
+    Mongoose, mongoJS for database connection
+
+npm init cmd: to create package.json file
+anguularjs client side javascript framework
+installing nodemon: npm install nodemon -g
+
+to pass value to ejs view and use in the view:
+    <%= title %>
+    
+Partials in ejs:
+
+Passing the arrays of objects to as variables
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

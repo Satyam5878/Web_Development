@@ -1,0 +1,76 @@
+Date 30/05/2018:
+
+M.E.A.N app:
+    M MongoDB
+    E ExpressJS
+    A AngularJS
+    N NodeJS
+
+About App:
+    Movie trailer app
+
+    Angulajs front end, consumes apis in the backend
+    full crud capabilites
+    total seperation between api server and angularJS Front end
+
+Prerequisite:
+    Homebrew:
+    NodeJS:
+    MongoDb:
+    GruntCLI: for automating things, less compiling etc
+    Bower:
+
+API first:
+    create the api on the server first and relation between them first and then build the intefaces arou it
+
+
+Setting up project(NodeJS):
+    create server directory
+    and npm init
+    
+    downloading modules:
+        npm install --save express
+        npm install --save mongoosh
+        npm install --save node-restful
+        npm install --save method-override
+        npm install --save body-parser
+        npm install --save loadash
+    Writing bootstrap file:
+        loaded module
+        created app
+        used middleware required for REST API's
+        connected to mongodb database
+        created server and listen to port 3000
+        
+        for REST API's add more middle ware: CORS Support for restfull interfaces
+        app.use: for content routes
+        
+        
+        (express: nodejs web application framework)
+        
+    Creating a Model:
+        define schema in mongodb
+        index of a model
+        
+        
+        dependency injection, dependency inject into the controller,
+        controller to have access to all the model, but model do not have to know about the controller
+    Creating the controller:
+        node-restful: takes the model and create the restful api, i.e. all the CRUD operations, model defins the restful apis
+        
+    Creating the routes:
+        it assigns the controller to the given routes
+        create the routes and assign controllers
+        registering the routes
+        
+    Building a client:
+        AngularJS: Single page application, but looks like full featured app
+        Bootstrapping(scaffolding) the client with yeoman
+        
+        npm install -g yo
+        npm install - generator-angular
+        Yeoman docs- http://yeoman.io/learning/
+        
+        for locally install grunt
+        
+        

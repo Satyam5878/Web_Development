@@ -1,0 +1,179 @@
+$ Date 26/05/2018:
+
+What is NodeJS?
+    Javascript Runtime: allows to run js in computer server
+    Built on chrome V8 Javascript Engine
+    
+    event driven and non blocking model
+    npm packages
+
+Capabilities:
+    read, delete and update files
+    communicate to databases
+    
+Popular?
+    uses JS
+    fast
+    great for real time services
+    
+websockets
+
+
+Learnings:
+    Inner working of NodeJS:
+        V8 Engine
+        Modules
+        Event Emmitter
+        The file System
+        
+    Creating a web server:
+        Routing 
+        Express
+        Templating
+    Creating a Node Application:
+    
+    
+Node.js is written in C++
+V8 engine convertes js code to machine code
+
+            JS
+            |
+    __________________
+   |C++  Node.js  V8  |
+   --------------------
+            |
+        Machine Code
+        
+        
+
+
+Global Object:
+
+    In client side : Window is the global object
+     
+    Methids like : alert, scroll, settimeout, setInterval, clearInterval, 
+    
+    But in Node: global object is "global"
+    
+    __dirname, __fileaname
+    
+Modules and require and exports:
+    Modules: js file for particular set of tasks
+    require and exports: help to use module 
+
+
+Normal Function:
+    function name(){};
+Function Expression:
+    var func_name = function(){};
+Passing function to another funtion as argument:
+    
+    
+    
+Date 28/05/2018:
+template string:
+    `some string ${some expression}`
+    
+
+
+core inbuilt modules of nodejs
+Event Module:
+    event emitter: 
+        defined in event module
+        can be use to define custom event and react to those events
+    
+    
+Util module:
+    
+FS module:    
+    
+callback function
+constructor
+forEach function of array object
+
+
+
+Reading amd writing files:
+    readFileSync
+    writeFileSync
+    readFile
+    writeFile
+    unlink: to delete file
+    
+Date 29/05/2018:
+Creating and removing directories:
+    Syncronuusly:
+        mkdirSync
+        rmdirSync
+    Asynchronously:
+        mkdir
+        rmdir
+        
+Client and server:
+
+   ________                               ________
+  | Client |    ------Request------>     | Server |
+  ----------                             ----------
+                <-----Response------
+                
+    server and client have protocols to communicate with each other
+    protocol: Http, Ftp
+    
+    Socket: Channel with which information can be sent
+    
+Creating a server:
+    http module
+    http.createServer
+    server.listen()
+    
+    response object:
+        
+    request object:
+        req.writeHead()
+        req.write()
+        req.end()
+        
+    
+Streams and buffers:
+    Buffers: 
+        temporary storage for data
+    Streams:
+        chunk of data flowing
+        Readable stream:
+            fs.createReadableStream
+        Writable Stream:
+        Duplex Stream:
+        
+    
+    increases the performance of the application
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

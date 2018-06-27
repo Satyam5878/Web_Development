@@ -1,0 +1,221 @@
+Date 13/06/2018:
+
+React: JS Library
+React Router, redux, authentication, animation
+Highely reactive, superfast JS Driven Web Application
+
+Writing your web apps in JS
+
+What is react?
+How it Works?
+why u will use?
+How to bild component with reacts?
+How to use read acts for better state management?
+How to use react router?
+
+
+What is react:
+    JS library for building user interface
+    react app runs in the browser
+    
+    user interface: is built using components
+    
+    a web page can splitted to several components
+    react components can be thought of custom html elements
+    
+    react: to create the react component
+    react dom: render the react component to dom
+    
+    babel: JSX(html inside the JS, behind the scene it gets compiled into js)
+        compiles the next JS code here to code thst runs fine in the browser
+        i.e we write code with the features we want but ship code that works fine with the browser
+        
+        
+React Component:
+    in its basic form it is just a function that returns what u want to render on the browser
+   
+Single DOM React call, Multiple Dom react call
+
+Why React:
+    UI Sate becomes difficault to handle
+    Focus on business logic
+    Huge ecosystem, high performance
+    
+React Vs Angular VS Vue
+
+
+Two Kind Of applications:
+    SPAs: 
+        Single Page Application
+        we get single html page from the server, which contains the components, 
+        and after that every thing is handelled by Js and react
+        
+        in SPAs our web page is composed of components, which are react components
+        and entire page is managed by root react component.
+        
+        typically one react dom render call, we have one root component mounted to the the domwhich hosts the other components
+        
+        
+    
+    MPAs:
+        Multi Page Application
+        we get multiple pages, for each route or url we have the content in that html file
+    
+        in this we more often call dom.render to rende rour widgets
+        
+        
+React router libraries:
+
+
+
+Course Outline:
+    Getting Started
+    The Basics
+    Debugging
+    Styling
+    Components Deep Dive
+    HTTP Requests
+    Routing
+    Forms and Validation
+    Redux
+    Authentications
+    Testing Introduction
+    Deploy
+    Bonus
+Next Generation JS Features:
+    arrow functions
+    classes
+
+
+The Basics:
+    How to create the react components
+    How to communicate between components
+    How react application is generally buit
+    Rendering some content conditionally
+    
+    
+    All core React Concepts:
+        How to set local react project 
+    
+    Using a build Workflow:
+        Why?
+            optimize code
+            next gen JS features, ES6 code
+            more productive
+        How?
+            use dependency mgmt tool e.g. npm, compiler from next gen JS to Current gen JS
+            Use Bundler(webpack): write moduler code and split it into multiple files
+            Use Compiler(Babel+pesets): next gen javascript
+            Development server
+    Folder Structure:
+        scripts files will be injected in the html file
+        registerServer file for registering the services
+        
+    JSX:
+        what it is?
+        how to write it?
+        how to add more cmponents to it?
+        
+        deeper look:
+        
+        restrictions:
+            not all the html attributes can be used
+            we have to return only one root elements per components and not the adjacent elements
+    Components:
+        typically u render one root component, 
+        
+        Own Components:
+        
+        in basic form component is just some basic function that returns some JSX
+        es5,es6
+        
+        two ways to create component:
+            class based, function based
+        
+        Using Components:
+        
+        Dynamic Content:
+        
+        Working with props:
+            props are set and passed from outside
+        children property:
+            props.children
+            
+        Setting up State:
+            component created by extending the Component class can have the properties
+            special property: state:: are managed inside the components
+        Manipulating state:
+        
+        Stateful vs Stateless:
+            your application state should change only in a selected position called containers.
+            
+        Component interection:
+            passing handler into the components:
+                
+            passing argument into the handler:
+                .bind(this, list of argument)
+                () => this.Handler()
+        Two way binding:
+            
+
+Styling:
+    How to make sure the style we apply to the componens is applied to only that component and not other
+    
+    
+Components:
+    Which life cyle they follow
+    Cleverly control wheather react should check for updates or not 
+    
+HTTP Requests:
+    How to connect reat application to outside world
+    How to fetch the data from server or send data to server
+    How to do it in SPAs MPAs with asynchronus requests(AJAX)
+   
+   
+Routing:
+    COre feature when building SPAs
+    we can handle different URLs even we have single html page
+    
+    routing module
+
+
+Redux:
+    Using asynchronus actions
+    
+Authentcation:
+
+
+Testing:
+    How to test react application
+    tools to use
+Deploy:
+    
+
+Bonus:
+    Animation
+    Next Step
+    Webpack
+
+
+
+
+
+Date 19/06/2018:
+
+TodoApp-:
+
+npm init -y : for initialising the package.json file
+npm i -S[--save] react react-dom
+npm i -D[--save-dev] babel-core babel-loader babel-preset-es2015 babel-preset-react react-hot-loader webpack webpack-dev-server
+npm i -g webpack webpack-dev-server
+
+touch webpack.config.js: for configuration for our webpack
+
+
+
+
+
+
+
+
+    

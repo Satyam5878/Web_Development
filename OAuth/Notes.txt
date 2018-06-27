@@ -1,0 +1,23 @@
+Date 24/05/2018:
+
+How it work?
+benifits
+
+OAutho 2.0 to authorize user with external server
+
+OAuth 2.0 Roles:
+            Roles
+              |
+  ------------+-------------------
+ |            |                   |
+ User       Application         API
+            e.x. Spotify        |--> Authentication server
+                                |--> Resource server
+                                e.g. fb
+                                
+                                
+                                
+                                
+Passwords are never passed fron server to server during OAuth 2.0
+
+work flow of OAuth 2.0

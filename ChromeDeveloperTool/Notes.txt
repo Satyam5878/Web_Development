@@ -1,0 +1,81 @@
+Date 24/05/2018:
+Debugging in google chrome
+
+running js in google chrome
+
+$_
+$0,$1....
+
+$ can also be used for query selector
+
+console.log
+console.error
+console.warn
+console.dir: js representation of any dom element
+console.table: to create table from object
+console.clear
+
+console.group
+console.groupEnd
+console.time:      
+console.timeEnd:   used for getting the amount of time it btakes to run between the two commands
+console.assert(condition, message in json form)
+
+sources tab
+
+ws: websocket
+localstorage in browser
+
+difference between local and session storage
+
+Storage: 
+    local:
+        localStorage.setItem()
+                    .clear()
+    session:
+        sessionStorage.setItem()
+                    .clear()
+    indexedDB
+    websql
+    cookies:
+        document.cookie
+Cache:
+    cache storage
+    Application cache
+    
+    
+Audits:
+    to check the performance, accessability,
+    
+    
+    
+Javascript Debugging:
+    Js Best Practices
+    Breakpoints
+    Watches
+    Using the Console
+    Call Stack
+    
+
+Js Best Practices:
+    Avoid global variable, by rapping it by anonymous funtion or clouser function
+    does not require strong typing
+    cross browser and cross device
+    
+    
+Breakpoints
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
