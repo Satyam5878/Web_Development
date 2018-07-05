@@ -1,19 +1,19 @@
-/*
+/* 
 console.log("Hello, Node is running");
 setTimeout(function(){
   console.log("3 seconds have passed");
 },3000);
-*/
-/*
-var time = 0;
+ */
+
+/* var time = 0;
 setInterval(function(){
   time+=2;
   console.log(time +" Seconds have passed");
 },2000);
-*/
+ */
 
-/*
-var time = 0;
+
+/* var time = 0;
 var timer = setInterval(function(){
   time+=2;
   console.log(time +" Seconds have passed");
@@ -21,12 +21,12 @@ var timer = setInterval(function(){
     clearInterval(timer);
   }
 },2000);
-*/
+ */
 
-/*
+/* 
 console.log(__dirname);
 console.log(__filename);
-*/
+ */
 
 /*
 function sayHi(){
@@ -46,12 +46,12 @@ calledFunction(sayHi);
 calledFunction(sayBye);
 */
 
-/*
+/* 
 var func = require("./Counter");
 
 console.log(func.add(3,4));
-*/
-/*
+ */
+/* 
 var couterFile = require("./Counter");
 console.log(couterFile.counter([1,2,3]));
 console.log(couterFile.pi);
@@ -140,3 +140,44 @@ fs.unlink("Stuff/writeMe.txt",function(){
   });
 });
 */
+
+
+
+// Read Stream
+/* 
+var https = require("https");
+var fs = require("fs");
+//var sleep = require("system-sleep");
+
+var readStream = fs.createReadStream(__dirname+"/readMe.txt",'utf8');
+readStream.on("data",function(chunk){
+  console.log(chunk);
+  console.log("sleeping for 10 secs.....");
+  //sleep(10000);s
+  
+}); */
+
+/* 
+// Write Stream 
+var https = require("https");
+var fs = require("fs");
+
+var readStream = fs.createReadStream(__dirname+"/readMe.txt",'utf8');
+var writeStream = fs.createWriteStream(__dirname+"/writeMe.txt","utf8");
+readStream.on("data",function(chunk){
+  console.log("Write new chunk");
+  writeStream.write(chunk);
+   
+});
+ */
+
+
+ // Pipes
+/* var https = require("https");
+var fs = require("fs");
+
+var readStream = fs.createReadStream(__dirname+"/readMe.txt",'utf8');
+var writeStream = fs.createWriteStream(__dirname+"/writeMe.txt","utf8");
+
+readStream.pipe(writeStream);
+ */
