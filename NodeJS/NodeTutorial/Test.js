@@ -172,7 +172,7 @@ readStream.on("data",function(chunk){
  */
 
 
- // Pipes
+// Pipes
 /* var https = require("https");
 var fs = require("fs");
 
@@ -181,3 +181,134 @@ var writeStream = fs.createWriteStream(__dirname+"/writeMe.txt","utf8");
 
 readStream.pipe(writeStream);
  */
+/* 
+ var http = require("https");
+ var fs = require("fs");
+ var server = http.createServer(function(req, res){
+    var readStream = fs.createReadStream(__dirname+"/readMe.txt","utf8");
+    res.writeHead(200,{"Content-Type": "text/plain"});
+    readStream.pipe(res);
+    //console.log("HEre");
+ });
+ server.listen("3000"); */
+
+/* 
+var http = require('http');
+var server = http.createServer();
+server.on('request',function(req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.write('Hello World \n');
+  res.end()
+})
+
+server.listen(3000);
+console.log('Server running on localhost 3000'); */
+
+/* var http = require("http");
+ var fs = require("fs");
+ var server = http.createServer(function(req, res){
+    var readStream = fs.createReadStream(__dirname+"/readMe.txt","utf8");
+    res.writeHead(200,{"Content-Type": "text/plain"});
+    readStream.pipe(res);
+    //console.log("HEre");
+ });
+ server.listen("3000"); */
+
+
+
+
+// Sending the html file to client:
+/* 
+ var http = require("http");
+ var fs = require("fs");
+ var server = http.createServer(function(req, res){
+    var readStream = fs.createReadStream(__dirname+"/index.html","utf8");
+    res.writeHead(200,{"Content-Type": "text/html"});
+    readStream.pipe(res);
+    //console.log("HEre");
+ });
+ server.listen("3000"); */
+
+/* // Sending the JSON data to client:
+var http = require("http");
+var fs = require("fs");
+var server = http.createServer(function(req, res){
+   var obj =  [
+       {
+           "name": "Aman Gupta",
+           "age": 23,
+           "ID": 1243
+       },
+       {
+           "name": "Satyam Gupta",
+           "age": 22,
+           "ID": 1244
+       }
+   ];
+   res.writeHead(200,{"Content-Type": "application/json"});
+   res.write(JSON.stringify(obj));
+   res.end();
+   //console.log("HEre");
+});
+server.listen(3000);
+console.log('Server running on localhost 3000'); */
+
+
+// Adding routing to application:
+var http = require("http");
+var fs = require("fs");
+var server = http.createServer(function (req, res) {
+  if (req.url === "/home" || req.url === "/") {
+    var readStream = fs.createReadStream(__dirname + "/index.html", "utf8");
+    res.writeHead(200, { "Content-Type": "text/html" });
+    readStream.pipe(res);
+  }
+  else if (req.url === "/contact") {
+    var readStream = fs.createReadStream(__dirname + "/contact.html", "utf8");
+    res.writeHead(200, { "Content-Type": "application/json" });
+    readStream.pipe(res);
+  }
+  else if (req.url === "/api/data") {
+    var obj = [
+      {
+        "name": "Aman Gupta",
+        "age": 23,
+        "ID": 1243
+      },
+      {
+        "name": "Satyam Gupta",
+        "age": 22,
+        "ID": 1244
+      }
+    ];
+
+    res.end(JSON.stringify(obj));
+  }
+  else {
+    var readStream = fs.createReadStream(__dirname + "/404.html", "utf8");
+    res.writeHead(200, { "Content-Type": "text/html" });
+    readStream.pipe(res);
+  }
+
+});
+server.listen(3000);
+console.log('Server running on localhost 3000');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

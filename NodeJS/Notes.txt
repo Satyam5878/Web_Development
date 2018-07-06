@@ -51,7 +51,7 @@ Global Object:
 
     In client side : Window is the global object
      
-    Methids like : alert, scroll, settimeout, setInterval, clearInterval, 
+    Methods like : alert, scroll, settimeout, setInterval, clearInterval, 
     
     But in Node: global object is "global"
     
@@ -67,10 +67,12 @@ Normal Function:
 Function Expression:
     var func_name = function(){};
 Passing function to another funtion as argument:
+    some_function(passing_function(){
+        
+    })
     
     
-    
-Date 28/05/2018:
+$ Date 28/05/2018:
 template string:
     `some string ${some expression}`
     
@@ -102,7 +104,7 @@ Reading amd writing files:
     
 Date 29/05/2018:
 Creating and removing directories:
-    Syncronuusly:
+    Syncronusly:
         mkdirSync
         rmdirSync
     Asynchronously:
@@ -150,11 +152,90 @@ Streams and buffers:
     
     
     
+  Date 29/06/2018:
+
+Creating Web Server:
+    https module
+    http.CreateServer(function(req, res))
+        
     
+#Module List:
+    http
+    fs
     
+
+# Date 05/06/2018:
     
-    
-    
+
+Reading and Writing Streams:
+    fs.createReadStream
+    fs.creatWriteStream
+
+    sending data using buffers and stream
+
+Pipes:
+    used for sending data.
+    pipe takes data from readable stream and pipes it to writable stream.   
+
+    readStream.pipe(writeStream);
+
+    the way you send the the plain text, we can also send the html content.
+
+    it increases the performance of the sending and receiving.
+
+Serving HTML Pages to Client:
+    content-type: text/html.
+
+
+$ Date 
+Serving JSON data to client:
+
+    change Content-Type- application/JSON
+    res.write method expects string or buffer objects.
+
+    why you will return json data:
+        this can be requested by js code.
+        might be the api end point.
+
+
+Basic Routing:
+    req.url property gives the url we are calling for.
+    for basic routing we can use if else condition to route based on the url.
+    we can send html or json or anything depending upon the request.
+
+    Express package for routing.
+
+Node package manager(npm):
+    node packages help to perform certain type to task within nodejs.
+    e.g.
+        Express: Routing and Templating.
+
+    www.npmjs.com
+
+
+Package.json:
+    file.
+    helps to keep track of packages used in the project.
+
+    npm install express -save: -save flags makes an entry in the package.json file.
+
+    npm insatll: will look for package.json file and install all the mmodules listed as dependencies.
+
+Nodemon package:
+    it basically listens to any changes to file and automatically reloades the server.
+
+    instead of running the application using node we run as, nodemon Test.js
+
+         
+
+   from here switch to express JS.           
+   
+
+
+        
+
+
+
     
     
     
